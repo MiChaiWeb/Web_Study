@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		.test{
+			width: 500px;
+			height: 379px;
+			position: relative;
+			margin-left: 600px;
+			
+		}
+		.flash{
+			height: 340px;
+			width: 60px;
+			position: absolute;
+			left: -200px;
+			transform: skewX(-40deg);
+			 /* border: solid; */    
+	      background: -webkit-linear-gradient(left,rgba(255,255,255,0)30%, rgba(255,255,255,0.4)50%, rgba(255,255,255,0)100%);
+		}
+		.test:hover .flash{
+			left: 690px;
+			transition:all 0.6s;
+		}
+	</style>
+	<body>
+		<div class="test">
+			<div class="flash"></div>
+			<img src="http://img5.imgtn.bdimg.com/it/u=1963442875,1146947704&fm=26&gp=0.jpg" alt="hu">
+		</div>
+	</body>
+</html>
