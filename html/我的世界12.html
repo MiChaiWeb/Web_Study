@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />。
 	<title>我的世界</title>
+	<script src="jquery.min.js"></script>
     <style type="text/css">
     .outer{
     	overflow: hidden;
@@ -282,5 +283,31 @@
     	oAudio.pause();
     }
 </script>
+	<script type="text/javascript">
+        $(function(){
+            resizewin();
+            window.οnresize=function(){resizewin()};
+            function resizewin() {
+                let designSize = 1920; // 设计图尺寸
+                let html = document.documentElement;
+                let wW = html.clientWidth;// 窗口宽度
+                let rem = wW * 100 / designSize; 
+                document.getElementsByTagName("html")[0].style.fontSize = rem + 'px';
+            }
+
+            $("#tkgb").click(function () {
+                $('#tanchu').hide();
+            });
+            $(".tcbtn").click(function(){
+                $("#tanchu").show();
+            })
+
+
+            if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+               $(".footer").css({"padding-bottom": "145px"});
+            }
+            
+        });
+    </script> 
 </body>
 </html>
