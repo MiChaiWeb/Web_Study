@@ -1,0 +1,183 @@
+
+	   ul{
+		   list-style: none;
+		   padding-left: 0;
+	   }
+   input,select,option,textarea{
+	   outline: none;
+	   background-color: transparent;
+	   }
+   .outer{
+	   width: 1111px;
+	   margin: 0 auto;
+	   }
+   .top .theme{
+	   font-family: "华文仿宋";
+	   width: 100px;
+	   text-align: center;
+	   font-size: 25px;
+	   margin: 40px auto;
+	   border: 1px solid transparent;
+   }
+   .top #setting{
+	       width: 42px;
+	       height: 42px;
+	       cursor: pointer;
+	       background: url("./img/setting.png") center center no-repeat rgba(255, 255, 255, 0.5);
+	       position: absolute;
+		   right: 60px;
+		   top: 50px;
+   }
+   .top .ss{
+	   width: 629px;
+	   height: 49px;
+	   margin: 30px auto;
+	   border: 1px solid #ccc;
+	   border-radius: 5px;
+   }
+    .top .ss input:first-child{
+		display: inline-block;
+		width: 500px;
+		height: 40px;
+		border-radius: 5px;
+		border:none;
+		padding: 0;
+	}
+	 .top .ss input:last-child{
+		 display: inline-block;
+		 height: 49px;
+		 padding: 0;
+		 border: none;
+		 cursor: pointer;
+		 width: 130px;
+		 margin-left: -6px;
+		 background-color: #e34f4f;
+		 color: #fff;
+		 font-size: 15px;
+		 outline: none;
+	 }
+	 
+	 /* 内容部分 */
+	 ul.content-nav{
+		 width: 872px;
+		 height: 65px;
+		 overflow: hidden;
+		 margin: 0px auto;
+		 padding-left: 50px;
+	 }
+	 /* 增加导航栏类 */
+	 .current{
+		 border-bottom:1px solid red ;
+		 color: red;
+		 font-size: 18px;
+		 background-size:40px 40px !important;
+	 }
+	 /* 增加鼠标背景类 */
+	 .bkchange{
+		background: url("imgs/bcimg.png");
+	 }
+	 /* 增加旋转类 */
+	 .xuanzuan{
+		 transform: rotate(360deg);
+		 transition: 2s;
+	 }
+	  ul.content-nav li{
+		  cursor: pointer;
+		  width: 80px;
+		  height: 40px;
+		  line-height: 40px;
+		  float:left;
+		   /* border:1px solid; */
+		  margin-left: 20px;
+		  text-align: center;
+		  padding-left: 35px; 
+		  font-family: "楷体";
+		  background-origin: border-box;
+	  }
+	   ul.content-nav li:nth-child(1){
+		   background: url("img/study.png") no-repeat left center ;
+		   background-size: 45px 45px !important;
+	   }
+	   ul.content-nav li:nth-child(2){
+	   		   background: url("img/video.png") no-repeat;
+	   		   background-size: 35px 40px;
+	   }
+	   ul.content-nav li:nth-child(3){
+	   		   background: url("img/audio.png") no-repeat;
+	   		   background-size: 35px 40px;
+	   }
+	   ul.content-nav li:nth-child(4){
+	   		   background: url("img/down.png") no-repeat;
+	   		   background-size: 35px 40px;
+	   }
+		ul.content-nav li:nth-child(5){
+	   		   background: url("img/dt.png") no-repeat;
+	   		   background-size: 35px 40px;
+	   }
+		ul.content-nav li:nth-child(6){
+	   		   background: url("img/news.png") no-repeat;
+	   		   background-size: 35px 40px;
+	   } 
+	   .content{
+		   position: relative;
+		   height: 300px;
+	   }
+	   .H{
+		    overflow: hidden; 
+			padding-left: 100px;
+			position: absolute;
+			
+	   }
+	   /* 默认样式 */
+	   .H dt{
+		   width: 120px;
+		   height: 100px;
+		   text-align: center;
+		   line-height: 160px;
+		   float: left;
+		   margin-left: 20px;
+		   margin-bottom: 40px;
+		   box-shadow: 5px 5px 10px #ccc;
+		   border-radius: 10px 30px 5px;
+	   }
+	   
+	   .H dt a{
+		   display: inline-block;
+		   text-decoration: none;
+		   width: 100%;
+		   height: 100%;
+		   color: #E34F4F;
+	   }
+	   /* 背景设置按钮 */
+	   .BK-change{
+		   display: none;
+		   position: absolute;
+		   width: 200px;
+		   height: 200px;
+		   border: solid 1px transparent;
+		   border-radius: 9px;
+		   box-shadow: 5px 6px 9px #ccc;
+		   top: 20px;
+		   right: 110px;
+		   }
+		   .BK-change .list{
+			   overflow: hidden;
+			   margin-top: 0;
+		   }
+		   /* 背景设置格子 */
+	   .BK-change li{
+		   width: 70px;
+		   height: 60px;
+		   line-height: 60px;
+		   border-radius: 20px 10px 20px;
+		   float: left;
+		   text-align: center;
+		   border: 1px solid pink;
+		   color: #E34F4F;
+		   margin-left: 20px;
+		   margin-top: 4px;
+		   cursor: pointer;
+		   color: #FFC0CB;
+		   }
+		   /* 主页背景添加类 */
+		   
